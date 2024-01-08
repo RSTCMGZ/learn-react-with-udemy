@@ -2,12 +2,20 @@ import React from 'react'
 import Angular from "./images/angular.jpg"
 import Bootstrap from "./images/bootstrap5.png"
 import Ccsharp from "./images/ccsharp.png"
-import Kompleweb from "./images/kompleweb.jpg"
+import KompleWeb from "./images/kompleweb.jpg"
+import './Course.css';
+
+const courseMap = {
+    Angular,
+    Bootstrap,
+    Ccsharp,
+    KompleWeb,
+}
 
 function Course({ courseName }) {
     return (
-        <div>
-            <img src={Kompleweb} alt="" />
+        <div className='coursediv'>
+            <img className='course' src={courseMap[courseName]} alt="course" />
         </div>
     )
 }

@@ -17,9 +17,9 @@ function App() {
     return <Course key={index} courseName={course} />
   })
   return (
-    <div>
-      <button onClick={handleClick}>Kurs Ekle</button>
-      <div>{courseList}</div>
+    <div className='App'>
+      <button className='appButton' onClick={handleClick}>Kurs Ekle</button>
+      <div className='courseList'>{courseList}</div>
     </div>
   );
 }

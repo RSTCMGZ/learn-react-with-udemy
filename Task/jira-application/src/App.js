@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import './App.css';
-import TasCreate from './components/TasCreate';
+import TaskCreate from './components/TaskCreate';
 import TaskList from './components/TaskList';
 
 function App() {
@@ -23,7 +23,7 @@ function App() {
   }
   return (
     <div className="App">
-      <TasCreate onCreate={createTask} />
+      <TaskCreate onCreate={createTask} />
       <h1>Görevler</h1>
       <TaskList tasks={tasks} onDelete={deleteTaskById} />
     </div>

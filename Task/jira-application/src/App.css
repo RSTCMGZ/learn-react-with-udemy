@@ -27,6 +27,9 @@
     color: #fff;
     font-size: 20px;
 }
+.update-button {
+    background-color: blueviolet;
+}
 .task-list {
     display: flex;
     flex-wrap: wrap;
@@ -73,4 +76,7 @@
 }
 .task-edit:hover {
     background-color: rgb(6, 6, 115);
+}
+.task-update {
+    width: 100%;
 }

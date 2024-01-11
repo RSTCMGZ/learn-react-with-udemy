@@ -27,3 +27,50 @@
     color: #fff;
     font-size: 20px;
 }
+.task-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.task-show {
+    border: 1px solid green;
+    border-radius: 30px;
+    width: 350px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.task-title {
+    margin-bottom: 5px;
+}
+.task-delete {
+    padding: 5px;
+    font-size: 15px;
+    width: 60px;
+    border: none;
+    border-radius: 30px;
+    background-color: red;
+    color: #fff;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.task-delete:hover {
+    background-color: rgb(149, 55, 55);
+}
+
+.task-edit {
+    padding: 5px;
+    font-size: 15px;
+    width: 100px;
+    border: none;
+    border-radius: 30px;
+    background-color: blue;
+    color: #fff;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.task-edit:hover {
+    background-color: rgb(6, 6, 115);
+}

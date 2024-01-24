@@ -1,10 +1,21 @@
 import './App.css';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 function App() {
+
+  useEffect(() => {
+    console.log('ilk kez render edildiğinde çalışır daha da çalışmaz');
+  }, [])
+  useEffect(() => {
+    console.log(`Her zaman çalıır`);
+  })
+
+  useEffect(() => {
+    console.log('ilk kez render edildiğinde çalışır  + değerde değişiklik olduğunda çalışır');
+
+  }, [])
   const [reso, setReso] = useState(0)
   const [reso2, setReso2] = useState(0)
-
 
 
   return (

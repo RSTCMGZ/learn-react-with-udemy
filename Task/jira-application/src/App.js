@@ -2,16 +2,24 @@ import { useState } from 'react';
 import './App.css';
 import TaskCreate from './components/TaskCreate';
 import TaskList from './components/TaskList';
+import axios from 'axios'
+
 
 function App() {
   const [tasks, setTasks] = useState([])
   const createTask = (title, taskDesc) => {
+
+    const response = axios.post('http://localhost:3004/tasks', {
+      title,
+      taskDesc
+    })
+    console.log(response);
     const createdTasks = [
       ...tasks, {
         id: Math.round(Math.random() * 999999),
         title,
-        taskDesc
-      }
+        taskDesc,
+      },
     ];
     setTasks(createdTasks)
   }

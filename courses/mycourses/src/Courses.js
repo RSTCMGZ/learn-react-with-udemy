@@ -1,7 +1,23 @@
+import Course from "./Course"
 
-function Courses({ courses }) {
+
+function Courses({ courses, removeCourse }) {
     return (
         <div>
+            <div>
+                <h2>Kurslarım</h2>
+
+            </div>
+            <div className="">
+                {
+                    courses.map((course) => {
+                        return (
+                            <Course key={course.id} {...course} removeOneCourse={removeCourse} />
+                            //course={course}
+                        )
+                    })
+                }
+            </div>
         </div>
     )
 }

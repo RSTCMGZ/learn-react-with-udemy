@@ -70,12 +70,22 @@ import './App.css';
 // }
 
 import React from 'react'
-import TitleOne from './TitleOne';
+import Sayac from './Sayac';
+// import TitleOne from './TitleOne';
 
+// function App() {
+//   return (
+//     <div>
+//       <TitleOne />
+//     </div>
+//   )
+// }
+
+// export default App;
 function App() {
   return (
     <div>
-      <TitleOne />
+      <Sayac />
     </div>
   )
 }

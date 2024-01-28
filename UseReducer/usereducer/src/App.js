@@ -70,7 +70,8 @@ import './App.css';
 // }
 
 import React from 'react'
-import Sayac from './Sayac';
+// import Sayac from './Sayac';
+import Personalinfo from './Personalinfo';
 // import TitleOne from './TitleOne';
 
 // function App() {
@@ -85,7 +86,9 @@ import Sayac from './Sayac';
 function App() {
   return (
     <div>
-      <Sayac />
+      {/* <Sayac /> */}
+      <Personalinfo />
+
     </div>
   )
 }

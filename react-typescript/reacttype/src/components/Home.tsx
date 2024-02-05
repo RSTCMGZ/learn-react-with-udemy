@@ -1,11 +1,6 @@
 import React from 'react'
+import { DateComing } from "../components/propstypes"
 
-type DateComing = {
-    name: string;
-    age: number;
-    courseNumber: number;
-    isBest: boolean;
-}
 
 function Home(props: DateComing) {
     return (

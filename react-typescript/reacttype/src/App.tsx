@@ -3,6 +3,8 @@ import './App.css';
 import Home from './components/Home';
 import Instructor from './components/Instructor';
 import InstructorList from './components/InstructorList';
+import Request from './components/Request';
+import EventAction from './components/EventAction';
 
 function App() {
   const instructor = {
@@ -32,6 +34,8 @@ function App() {
       <Home name="rst cmgz" age={21} courseNumber={2} isBest={true} />
       <Instructor instructorNameLastName={instructor} />
       <InstructorList instructorNameLastNameList={instructorList} />
+      <Request status="loading" />
+      <EventAction />
     </div>
   );
 }

@@ -10,8 +10,7 @@ type PropsType = {
 
 function TodoItem({ task, deleteTask }: PropsType) {
     return (
-        <div>
-
+        <div className='card'>
             <div>
                 <p>
                     {task.taskName}
@@ -19,7 +18,7 @@ function TodoItem({ task, deleteTask }: PropsType) {
                 <p>
                     {task.workDay}
                 </p>
-                <button onClick={() => deleteTask(task.taskName)}>Sil</button>
+                <button className='btnDelete' onClick={() => deleteTask(task.taskName)}>Sil</button>
             </div>
 
         </div>

@@ -1,11 +1,14 @@
 import './App.css';
-
-import LessonTypography from './components/LessonTypography';
+// import LessonButton from './components/LessonButton';
+import LessonButtonGroup from './components/LessonButtonGroup';
+// import LessonTypography from './components/LessonTypography';
 
 function App() {
   return (
     <div className="App">
-      <LessonTypography />
+      {/* <LessonTypography /> */}
+      {/* <LessonButton /> */}
+      <LessonButtonGroup />
     </div>
   );
 }

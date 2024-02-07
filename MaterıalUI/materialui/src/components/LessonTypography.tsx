@@ -14,6 +14,19 @@ const LessonTypography = () => {
             <Typography variant='h4'>H4</Typography>
             <Typography variant='h5'>H5</Typography>
             <Typography variant='h6'>H6</Typography>
+
+            <Typography variant='h1' component={'h4'}>H1</Typography>
+
+
+
+            <Typography variant='h1' component={'h4'} align='left'>H1</Typography>
+            <Typography variant='h1' component={'h4'} align='right'>H1</Typography>
+
+
+
+            <Typography variant='subtitle1' >Subtitle</Typography>
+            <Typography variant='subtitle2'>Subtitle2</Typography>
+
         </div>
     )
 }

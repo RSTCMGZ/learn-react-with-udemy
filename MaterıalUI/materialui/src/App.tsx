@@ -1,6 +1,7 @@
 import './App.css';
+import LessonSnackBars from './components/LessonSnackBars';
 // import LessonAlert from './components/LessonAlert';
-import LessonDialog from './components/LessonDialog';
+// import LessonDialog from './components/LessonDialog';
 // import LessonToolTip from './components/LessonToolTip';
 // import LessonAvatar from './components/LessonAvatar';
 // import LessonList from './components/LessonList';
@@ -58,8 +59,8 @@ function App() {
       {/* <LessonList /> */}
       {/* <LessonToolTip /> */}
       {/* <LessonAlert /> */}
-      <LessonDialog />
-
+      {/* <LessonDialog /> */}
+      <LessonSnackBars />
     </div>
   );
 }

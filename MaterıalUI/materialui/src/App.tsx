@@ -1,6 +1,9 @@
 import './App.css';
+import { LessonTable } from './components/LessonTable';
+// import { LessonLoadingButton } from './components/LessonLoadingButton';
+
 // import LessonProgress from './components/LessonProgress';
-import LessonSkeleton from './components/LessonSkeleton';
+// import LessonSkeleton from './components/LessonSkeleton';
 // import LessonSnackBars from './components/LessonSnackBars';
 // import LessonAlert from './components/LessonAlert';
 // import LessonDialog from './components/LessonDialog';
@@ -64,7 +67,9 @@ function App() {
       {/* <LessonDialog /> */}
       {/* <LessonSnackBars /> */}
       {/* <LessonProgress /> */}
-      <LessonSkeleton />
+      {/* <LessonSkeleton /> */}
+      {/* <LessonLoadingButton /> */}
+      <LessonTable />
     </div>
   );
 }

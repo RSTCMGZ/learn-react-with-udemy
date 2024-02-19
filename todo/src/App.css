@@ -28,3 +28,18 @@ header {
 .todoText {
     border: none;
 }
+.contentDiv {
+    border: 1px solid lightblue;
+    border-radius: 30px;
+    min-width: 250px;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+footer {
+    background-color: lightblue;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+}

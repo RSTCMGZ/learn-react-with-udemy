@@ -3,10 +3,14 @@ import CreateTask from './CreateTask';
 import Header from './Header';
 
 function App() {
+
+  const addTask = (newTask) => {
+
+  }
   return (
     <div className="App">
       <Header />
-      <CreateTask />
+      <CreateTask onAdd={addTask} />
     </div>
   );
 }

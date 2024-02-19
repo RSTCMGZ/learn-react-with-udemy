@@ -4,7 +4,7 @@ import AssingnmentIcon from '@mui/icons-material/Assignment'
 function Header() {
 
     return (
-        <header className='bg-    px-'>
+        <header>
             <h1>
                 <AssingnmentIcon />
                 To Do List

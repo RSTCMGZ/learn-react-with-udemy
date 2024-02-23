@@ -1,3 +1,7 @@
+.App {
+    margin-bottom: 30px;
+}
+
 .navbar {
     display: flex;
     justify-content: space-around;
@@ -20,4 +24,43 @@
     width: 20px;
     text-align: center;
     border-radius: 50%;
+}
+.cart {
+    text-align: center;
+}
+.cartClearButton {
+    padding: 10px;
+    border: none;
+    border-radius: 30px;
+    background-color: blue;
+    color: #fff;
+    cursor: pointer;
+}
+.cartItem {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 150px;
+}
+.cartItem img {
+    width: 400px;
+}
+.cartInfo {
+    text-align: right;
+}
+.cartQuantity {
+    margin-right: 8px;
+}
+.cartQuantityButton {
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+.cartDeleteButton {
+    padding: 10px 30px;
+    border-radius: 20px;
+    border: none;
+    margin-top: 50px;
+    background-color: red;
+    color: #fff;
+    cursor: pointer;
 }

@@ -1,10 +1,13 @@
 import React from 'react'
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 import CourseItem from './CourseItem';
+import { clearCart } from '../control/cartSlice'
 
 function CourseList() {
 
     const { cartItems, quantity, total } = useSelector((store) => store.cart);
+
+    const dispatch = useDispatch()
     return (
         <>
             {quantity < 1 ? (
@@ -29,7 +32,7 @@ function CourseList() {
                         <div>
                             <h4> Toplam Tutar <span>{total} TL</span></h4>
                         </div>
-                        <button className='cartClearButton'>Temizle</button>
+                        <button onClick={() => dispatch(clearCart())} className='cartClearButton'>Temizle</button>
                     </footer>
                 </section>
 

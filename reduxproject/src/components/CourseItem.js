@@ -1,7 +1,7 @@
 import React from 'react'
 import { BsChevronUp, BsChevronDown } from "react-icons/bs";
 import { useDispatch } from 'react-redux';
-import { removeItem } from '../control/cartSlice'
+import { removeItem, increase, decrease } from '../control/cartSlice'
 
 
 function CourseItem({ id, title, price, img, quantity }) {
@@ -14,11 +14,11 @@ function CourseItem({ id, title, price, img, quantity }) {
                 <h4>{title}</h4>
                 <h4>{price}TL</h4>
                 <div>
-                    <button className='cartQuantityButton'>
+                    <button onClick={() => { dispatch(increase(id)) }} className='cartQuantityButton'>
                         <BsChevronUp />
                     </button>
                     <p className='cartQuantity'>{quantity}</p>
-                    <button className='cartQuantityButton'>
+                    <button onClick={() => { dispatch(decrease(id)) }} className='cartQuantityButton'>
                         <BsChevronDown />
                     </button>
                 </div>

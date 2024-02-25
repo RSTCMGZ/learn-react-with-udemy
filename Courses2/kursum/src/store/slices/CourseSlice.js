@@ -18,4 +18,5 @@ const courseSlice = createSlice({
     }
 })
 
+export const { addCourse } = courseSlice.actions
 export const courseReducer = courseSlice.reducer

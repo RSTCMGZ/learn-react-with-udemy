@@ -1,6 +1,8 @@
 import React from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { changeName, changeDescription, changeCost } from '../store/slices/FormSlice'
+import { addCourse } from '../store/slices/CourseSlice'
+
 function CourseForm() {
     const dispatch = useDispatch()
     const { name, description, cost } = useSelector((state) => {
@@ -12,6 +14,7 @@ function CourseForm() {
     })
     const handleSubmit = (event) => {
         event.preventDefault();
+        dispatch(addCourse({ name, description, cost }))
 
     }
     return (

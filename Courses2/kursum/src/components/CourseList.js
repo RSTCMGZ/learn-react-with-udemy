@@ -1,10 +1,14 @@
 import React from 'react'
-import { useSelector } from 'react-redux'
-
+import { useSelector, useDispatch } from 'react-redux'
+import { removeCourse } from '../store/slices/CourseSlice'
 
 function CourseList() {
-    const courses = useSelector((state) => {
-        return state.courses.data
+    const dispatch = useDispatch()
+    const { courses } = useSelector(({ form, courses: { data, searchTerm } }) => {
+        const filteredCourses = data.filter((course) => course.name.toLowerCase().includes(searchTerm.toLowerCase()))
+        return {
+            courses: filteredCourses
+        }
     })
 
     const renderedCourses = courses.map((course) => {
@@ -13,7 +17,9 @@ function CourseList() {
                 <h1>{course.name}</h1>
                 <p>{course.description}</p>
                 <p>{course.cost}</p>
-                <button className='button is-danger'>Sil</button>
+                <button onClick={() => {
+                    dispatch(removeCourse(course.id))
+                }} className='button is-danger'>Sil</button>
             </div>
         )
     })

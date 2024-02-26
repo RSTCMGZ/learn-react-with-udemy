@@ -42,6 +42,7 @@
     align-items: center;
     border: 1px solid #dbdbdb;
     border-radius: 30px;
+    margin-top: 20px;
 }
 
 .courseList .note {

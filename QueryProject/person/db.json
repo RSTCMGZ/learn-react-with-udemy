@@ -1,16 +1,12 @@
 {
     "users":[
         {
-            "id":1,
+            "id": 1,
             "name": "Julia"
-        },
-        {
-            "id":2,
-            "name": "Reşo"
-        },
-        {
-            "id":3,
-            "name": "Camgoz"
-        }
+          },
+          {           
+            "id": 3,
+            "name": "Can Boz"
+          }
     ]
 }

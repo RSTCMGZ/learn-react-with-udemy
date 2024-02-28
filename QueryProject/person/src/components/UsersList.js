@@ -1,9 +1,9 @@
 import React from 'react'
 
-function UsersList() {
+function usersList() {
     return (
         <div>UsersList</div>
     )
 }
 
-export default UsersList
+export default usersList

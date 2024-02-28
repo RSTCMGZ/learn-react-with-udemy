@@ -1,11 +1,11 @@
 import './App.css';
-import UsersList from './components/UsersList';
+import UserList from './components/usersList';
 
 function App() {
   return (
-    < >
-      <UsersList />
-    </>
+    <div>
+      <UserList />
+    </div>
   );
 }
 

@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "json-server": "^1.0.0-alpha.22"
+    "json-server": "^1.0.0-alpha.22",
+    "styled-jsx": "^5.1.2"
   }
 }

@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "@faker-js/faker": "^8.4.1",
     "json-server": "^1.0.0-alpha.22",
     "styled-jsx": "^5.1.2"
   }

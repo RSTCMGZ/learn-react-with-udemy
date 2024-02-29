@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.10.6",
+    "@faker-js/faker": "^8.4.1",
     "@emotion/styled": "^11.10.6",
     "@mui/material": "^5.11.12",
     "@reduxjs/toolkit": "^1.9.3",

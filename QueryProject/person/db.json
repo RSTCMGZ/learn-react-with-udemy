@@ -8,5 +8,15 @@
       "id": "3",
       "name": "Reso"
     }
-  ]
+  ],
+    "albums":[
+      {
+        "userId":3,
+        "title":"İzmir",
+        "id":15
+      }
+    ]
 }
+
+
+   

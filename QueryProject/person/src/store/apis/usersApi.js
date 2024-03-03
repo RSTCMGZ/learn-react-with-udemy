@@ -1,5 +1,4 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
-import { resolve } from 'styled-jsx/css';
 import { faker } from '@faker-js/faker';
 
 const pause = (duration) => {

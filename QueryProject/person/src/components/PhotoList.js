@@ -40,7 +40,7 @@ function PhotoList({ album }) {
                     </span>}
                 </Button>
             </div>
-            <div>
+            <div className='photoDiv'>
                 {content}
             </div>
         </div>
